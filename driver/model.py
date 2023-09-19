@@ -35,3 +35,11 @@ class Label(str, Enum):
             cls.VPS_Test,
             cls.Options,
         ]
+
+
+class Path_Is_Not_Folder_Error(Exception):
+    def __int__(self, msg):
+        self.msg = msg
+
+    def __repr__(self):
+        return f"{self.__class__} <<{self.msg}>>"
