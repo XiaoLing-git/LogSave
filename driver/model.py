@@ -21,6 +21,7 @@ class Label(str, Enum):
     @classmethod
     def get_all_type(cls) -> List:
         return [
+            cls.Options,
             cls.Navi_Plan,
             cls.Navi_Control,
             cls.CornerLoad,
@@ -32,8 +33,7 @@ class Label(str, Enum):
             cls.Fork_Control,
             cls.Lift_To_Bottom,
             cls.Integration,
-            cls.VPS_Test,
-            cls.Options,
+            cls.VPS_Test
         ]
 
 

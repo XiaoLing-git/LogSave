@@ -22,7 +22,8 @@ class SaveLog:
 
     def __build(self):
         for file in self.__target_files:
-            shutil.move(str(file), str(self.__storage_path))
+            # shutil.move(str(file), str(self.__storage_path))
+            shutil.copy(str(file), str(self.__storage_path))
 
     @classmethod
     def run(cls,
