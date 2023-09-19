@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Union, List
 
-from driver.model import Path_Is_Not_Folder_Error
+from .model import Path_Is_Not_Folder_Error
 
 
 class ListLogFiles:

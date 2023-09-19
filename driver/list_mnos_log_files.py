@@ -1,8 +1,8 @@
 from datetime import datetime
 from pathlib import Path
 
-from driver.list_log_files import ListLogFiles
-from driver.model import Path_Is_Not_Folder_Error
+from .list_log_files import ListLogFiles
+from .model import Path_Is_Not_Folder_Error
 
 
 class ListMnosLogFiles(ListLogFiles):
